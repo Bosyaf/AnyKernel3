@@ -4,7 +4,7 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string= Bosyaf
+kernel.string= Bosyaf Kernel
 do.devicecheck=0
 do.modules=0
 do.systemless=0
