@@ -4,7 +4,7 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=BosYaf and Maeglin Kernel
+kernel.string=Bossyaff and Maeglin Kernel
 do.devicecheck=0
 do.modules=0
 do.systemless=0
@@ -38,9 +38,9 @@ no_magisk_check=1
 # Custom UI Print Header
 ui_print "*********************************************"
 ui_print "*                                           *"
-ui_print "*         BosYaf & Maeglin Kernel           *"
+ui_print "*         Bossyaff & Maeglin Kernel           *"
 ui_print "*   An Exclusive & Custom Kernel Build      *"
-ui_print "*   Developed & Optimized by: @bosyafF      *"
+ui_print "*   Developed & Optimized by: @bossyaff     *"
 ui_print "*                                           *"
 ui_print "*********************************************"
 ui_print " "
