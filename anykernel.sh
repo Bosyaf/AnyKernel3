@@ -4,7 +4,7 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=CG+ Nimrodel Kernel
+kernel.string=BosYaf and Maeglin Kernel
 do.devicecheck=0
 do.modules=0
 do.systemless=0
@@ -20,21 +20,31 @@ supported.patchlevels=
 supported.vendorpatchlevels=
 '; } # end properties
 
-
 ### AnyKernel install
 ## boot shell variables
 block=boot
 is_slot_device=auto
-device.name1=houji
-device.name2=shennong
-device.name3=aurora
-device.name4=xiaomi14
+device.name1=
+device.name2=
+device.name3=
+device.name4=
 ramdisk_compression=auto
 patch_vbmeta_flag=auto
 no_magisk_check=1
 
 # import functions/variables and setup patching - see for reference (DO NOT REMOVE)
 . tools/ak3-core.sh
+
+# Custom UI Print Header
+ui_print "*********************************************"
+ui_print "*                                           *"
+ui_print "*         BosYaf & Maeglin Kernel           *"
+ui_print "*   An Exclusive & Custom Kernel Build      *"
+ui_print "*   Developed & Optimized by: @bosyafF      *"
+ui_print "*                                           *"
+ui_print "*********************************************"
+ui_print " "
+
 kernel_version=$(cat /proc/version | awk -F '-' '{print $1}' | awk '{print $3}')
 case $kernel_version in
     5.1*) ksu_supported=true ;;
@@ -55,5 +65,4 @@ else
     write_boot # use flash_boot to skip ramdisk repack, e.g. for devices with init_boot ramdisk
 fi
 ## end boot install
-
 
